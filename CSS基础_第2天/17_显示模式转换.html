@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: aquamarine;
+        }
+
+        .div2 {
+            background-color: gold;
+        }
+
+        span {
+            /* 设置宽高不生效 */
+            width: 100px;
+            height: 100px;
+        }
+
+        .span1 {
+            background-color: aqua;
+        }
+
+        .span2 {
+            background-color: chartreuse;
+        }
+
+        img {
+            /* 设置宽高生效 */
+            width: 500px;
+        }
+
+        .span3 {
+            background-color: gold;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块 -->
+    <div class="div1">xxx</div>
+    <div class="div2">yyy</div>
+
+    <!-- 行内 -->
+    <span class="span1">span1</span>
+    <span class="span2">span2</span>
+
+    <!-- 行内块 -->
+    <img src="../resources/显示模式.jpg" alt="显示模式">
+    <img src="../resources/显示模式.jpg" alt="显示模式">
+
+    <hr>
+    <hr>
+
+    <!-- 改变span的显示模式 -->
+    <span class="span3">我是span，但被改成了[块]的显示模式</span>
+
+</body>
+
+</html>
