@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* padding多值写法 */
+            /* 口诀: 从上开始, 按顺时针的顺序, 即上右下左的顺序, 依次设置;
+               若当前方向没有设置, 则取值跟对面一样. */
+
+            /* 四个值: 上 右 下 左 的顺序 */
+            padding: 5px 10px 15px 20px;
+
+            /* 三个值: 上 左右 下 的顺序 */
+            padding: 5px 10px 5px;
+
+            /* 两个值: 上下 左右 的顺序 */
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">text1</div>
+    <hr>
+    <img src="../resources/盒子模型_内边距.png" alt="盒子模型内边距" height="400px">
+</body>
+
+</html>
