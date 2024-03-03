@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器, 在指定元素[里面]添加一个伪元素 */
+        /* 必须设置content属性 */
+        /* 默认是行内显示模式 */
+        div::before {
+            content: "老鼠";
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            display: block;
+        }
+
+        div::after {
+            content: "大米";
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 写一个[老鼠爱大米] -->
+    <div>爱</div>
+    <hr>
+    <img src="../resources/伪元素选择器.png" width="600">
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择列表中的第一个 */
+        li:first-child {
+            background-color: blueviolet;
+        }
+
+        /* 选择列表中的最后一个 */
+        li:last-child {
+            background-color: blue;
+        }
+
+        li:nth-child(3) {
+            background-color: red;
+        }
+
+        /* 选中所有偶数列表 */
+        li:nth-child(2n) {
+            color: yellowgreen;
+        }
+
+        /* 选中所有奇数列表, n从0开始计算 */
+        li:nth-child(2n+1) {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>列表5</li>
+        <li>列表6</li>
+        <li>列表7</li>
+        <li>列表8</li>
+        <li>列表9</li>
+        <li>列表10</li>
+    </ul>
+
+    <hr>
+    <img src="../resources/结构伪类选择器.png" width="800">
+</body>
+
+</html>
