@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        img {
+        .perfect_circle {
+            box-sizing: border-box;
+            padding: 25px;
+            margin-bottom: 20px;
+
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .perfect_circle img {
             width: 200px;
             height: 200px;
 
@@ -14,7 +25,7 @@
             border-radius: 50%;
         }
 
-        div {
+        .capsule {
             width: 200px;
             height: 100px;
             background-color: orange;
@@ -26,11 +37,13 @@
 </head>
 
 <body>
-    <!-- 正圆: 图像的宽和高必须相等 -->
-    <img src="../resources/小猫.jpg" alt="小猫">
+    <div class="perfect_circle">
+        <!-- 正圆: 图像的宽和高必须相等 -->
+        <img src="../resources/小猫.jpg" alt="小猫">
+    </div>
 
     <!-- 胶囊: 盒子必须是矩形 -->
-    <div></div>
+    <div class="capsule"></div>
 </body>
 
 </html>
