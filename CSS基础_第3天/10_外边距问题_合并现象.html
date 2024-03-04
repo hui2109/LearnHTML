@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* 垂直排列的兄弟元素, 上下 margin 会合并, 取margin值较大的那个元素 */
+            margin-bottom: 50px;
+        }
+
+        .div2 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">text1</div>
+    <div class="div2">text2</div>
+
+    <hr>
+    <img src="../resources/外边距问题_合并现象.png" alt="外边距问题_合并现象" height="400px">
+</body>
+
+</html>

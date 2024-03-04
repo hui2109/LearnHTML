@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+
+            /* 解决方案1: 
+               1. 取消子级的[上外边距];
+               2. 添加父级的[上内边距];
+               3. 设置内减模式 */
+            padding-top: 50px;
+            box-sizing: border-box;
+
+            /* 解决方案2 */
+            /* overflow: hidden; */
+
+            /* 解决方案3 */
+            /* border-top: 1px solid #000; */
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* 父子级的标签 子级添加[上外边距] 会产生塌陷问题 */
+            /* 即父级和子级都会向下移动 */
+            /* margin-top: 50px; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">text</div>
+    </div>
+    <hr>
+    <img src="../resources/外边距问题_塌陷问题.png" alt="外边距问题_塌陷问题" height="400px">
+</body>
+
+</html>
