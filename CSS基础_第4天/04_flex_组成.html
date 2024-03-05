@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            background-color: pink;
+
+            /* 设置flex布局 */
+            /* 此时.box为[弹性容器] */
+            display: flex;
+        }
+
+        /* 此时.box div为弹性[盒子] */
+        /* 弹性盒子默认沿主轴方向排列 */
+        .box div {
+            width: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <hr>
+    <img src="../resources/flex组成.png" alt="flex组成" width="800px">
+</body>
+
+</html>

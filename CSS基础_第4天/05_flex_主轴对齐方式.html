@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div {
+            margin-bottom: 50px;
+            height: 300px;
+            border: 1px solid #000;
+
+            /* 设置所有盒子为flex布局 */
+            display: flex;
+        }
+
+        div div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .flex_start {
+            /* 默认值, 弹性盒子从[起点]开始依次排列 */
+            justify-content: flex-start;
+        }
+
+        .flex_end {
+            /* 弹性盒子从[终点]开始依次排列 */
+            justify-content: flex-end;
+        }
+
+        .center {
+            /* 弹性盒子沿主轴[居中]排列 */
+            justify-content: center;
+        }
+
+        .space_between {
+            /* 弹性盒子之间的间距相等 */
+            justify-content: space-between;
+        }
+
+        .space_around {
+            /* 间距出现在弹性盒子两侧*/
+            /* 视觉效果为, 弹性盒子之间的间距是两端间距的2倍*/
+            justify-content: space-around;
+        }
+
+        .space_evenly {
+            /* 所有间距都相等 */
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex_start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="flex_end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="space_between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="space_around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="space_evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="images">
+        <img src="../resources/flex布局.png" alt="flex布局">
+        <img src="../resources/主轴对齐方式.png" alt="主轴对齐方式">
+    </div>
+</body>
+
+</html>
