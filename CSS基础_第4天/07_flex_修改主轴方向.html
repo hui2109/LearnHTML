@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            display: flex;
+
+            /* 修改主轴方向, 侧轴始终和主轴垂直 */
+            flex-direction: column;
+
+            /* 设置垂直居中效果 */
+            justify-content: center;
+
+            /* 设置水平居中效果 */
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>text</div>
+        <img src="../resources/小猫.jpg" alt="小猫" width="200px" height="200px">
+    </div>
+</body>
+
+</html>

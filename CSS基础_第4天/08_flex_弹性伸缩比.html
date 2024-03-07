@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box div {
+            background-color: pink;
+            border: 1px solid #000;
+        }
+
+        .box :nth-child(1) {
+            height: 100px;
+            width: 100px;
+        }
+
+        .box div:nth-child(2) {
+            /* 控制弹性盒子的[主轴方向]的尺寸 */
+            /* 整数数字, 表示占用父级剩余尺寸的份数 */
+            flex: 1;
+        }
+
+        .box div:nth-child(3) {
+            /* 默认情况下, 主轴方向由内容撑开, 侧轴默认拉伸 */
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <hr>
+    <img src="../resources/弹性伸缩比.png" alt="弹性伸缩比" width="400px">
+</body>
+
+</html>
