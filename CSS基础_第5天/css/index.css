@@ -1,0 +1,55 @@
+/* 首页样式 */
+
+/* 版心居中效果 必须设置宽度 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper {
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url("../images/logo.png");
+    font-size: 0;
+}
+
+.nav {
+    margin-left: 102px;
+    margin-right: 96px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-right: 24px;
+    padding: 0 8px 6px;
+}
+
+.nav ul li a {
+    line-height: 27px;
+    font-size: 19px;
+}
+
+.nav .active,
+.nav li:hover {
+    border-bottom: 2px solid #00a4ff;
+}
