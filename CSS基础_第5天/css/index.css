@@ -1,5 +1,6 @@
 /* 首页样式 */
 
+/* 全局wrapper样式 */
 /* 版心居中效果 必须设置宽度 */
 .wrapper {
     margin: 0 auto;
@@ -31,7 +32,6 @@ body {
 
 .nav {
     margin-left: 102px;
-    margin-right: 96px;
 }
 
 .nav ul {
@@ -52,4 +52,61 @@ body {
 .nav .active,
 .nav li:hover {
     border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+
+    display: flex;
+    align-items: center;
+
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input {
+    border: 0;
+    background-color: transparent;
+
+    /* 去掉输入框的焦点框 */
+    outline: none;
+
+    /* 将输入框设置为最大 */
+    flex: 1;
+}
+
+/* 设置placeholder内文字的样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.search a {
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/search.png");
+}
+
+.user {
+    margin-left: 32px;
+}
+
+.user a {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+.user p {
+    font-size: 16px;
+    color: #666;
 }
