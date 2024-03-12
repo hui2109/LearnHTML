@@ -12,7 +12,6 @@ body {
 }
 
 .header {
-    height: 100px;
     background-color: #fff;
 }
 
@@ -109,4 +108,107 @@ body {
 .user p {
     font-size: 16px;
     color: #666;
+}
+
+.banner {
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url("../uploads/banner.png");
+}
+
+.banner .left {
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+.left ul {
+    padding: 3px 20px 3px;
+    width: 191px;
+    height: 420px;
+}
+
+.left li a {
+    /* 块级的好处: 宽度是父级的100% */
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 46px;
+    background-image: url("../images/right.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.left li a:hover {
+    color: #00a4ff;
+    background-image: url("../images/right-hover.png");
+}
+
+.right {
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.right>p {
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.right .content {
+    padding: 14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.right .content li {
+    border-bottom: 1px solid #e0e0e0;
+    width: 190px;
+    height: 53px;
+}
+
+.right .content li:nth-child(2) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.right .content li p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.right .content li .courseinfo {
+    font-size: 12px;
+    color: #7d7d7d;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.right .content li .courseinfo span:first-child {
+    color: #00a4ff;
+}
+
+.right .content a {
+    display: block;
+    margin-top: 14px;
+    height: 32px;
+    background-color: #00a4ff;
+    border-radius: 16px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
 }
