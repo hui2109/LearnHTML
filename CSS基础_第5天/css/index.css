@@ -126,13 +126,13 @@ body {
     background-color: rgba(0, 0, 0, 0.42);
 }
 
-.left ul {
+.banner .left ul {
     padding: 3px 20px 3px;
     width: 191px;
     height: 420px;
 }
 
-.left li a {
+.banner .left li a {
     /* 块级的好处: 宽度是父级的100% */
     display: block;
     font-size: 16px;
@@ -144,19 +144,19 @@ body {
     background-position: right center;
 }
 
-.left li a:hover {
+.banner .left li a:hover {
     color: #00a4ff;
     background-image: url("../images/right-hover.png");
 }
 
-.right {
+.banner .right {
     width: 218px;
     height: 305px;
     background-color: #209dd5;
     border-radius: 10px;
 }
 
-.right>p {
+.banner .right>p {
     margin-top: 18px;
     margin-left: 14px;
     margin-bottom: 9px;
@@ -164,25 +164,25 @@ body {
     color: #fff;
 }
 
-.right .content {
+.banner .right .content {
     padding: 14px;
     height: 257px;
     background-color: #fff;
     border-radius: 10px;
 }
 
-.right .content li {
+.banner .right .content li {
     border-bottom: 1px solid #e0e0e0;
     width: 190px;
     height: 53px;
 }
 
-.right .content li:nth-child(2) {
+.banner .right .content li:nth-child(2) {
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
-.right .content li p {
+.banner .right .content li p {
     font-size: 14px;
     line-height: 20px;
     color: #333;
@@ -190,18 +190,18 @@ body {
     margin-bottom: 8px;
 }
 
-.right .content li .courseinfo {
+.banner .right .content li .courseinfo {
     font-size: 12px;
     color: #7d7d7d;
     line-height: 16px;
     margin-bottom: 8px;
 }
 
-.right .content li .courseinfo span:first-child {
+.banner .right .content li .courseinfo span:first-child {
     color: #00a4ff;
 }
 
-.right .content a {
+.banner .right .content a {
     display: block;
     margin-top: 14px;
     height: 32px;
@@ -258,13 +258,13 @@ body {
 }
 
 .course {
-    margin-top: 30px;
-    height: 600px;
+    height: 621px;
 }
 
 /* 这个hd标签是公用的 */
 .hd {
     display: flex;
+    margin-top: 30px;
     height: 45px;
     justify-content: space-between;
     align-items: center;
@@ -275,7 +275,8 @@ body {
     color: #333;
 }
 
-.hd a {
+/* 这个a标签是公用的 */
+.more {
     padding-right: 20px;
     font-size: 14px;
     color: #999;
@@ -293,7 +294,8 @@ body {
     align-content: space-between;
 }
 
-.course .bd a {
+/* bd a 是公共样式 */
+.bd a {
     display: block;
     height: 271px;
 
@@ -301,35 +303,149 @@ body {
     width: 228px;
 }
 
-.course .bd a .pic {
+.bd a .pic {
     /* 必须设成block, 不然图片和div间有间距 */
 
     /* 必须设置高度(与图片一样高), 不然两个div之间有距离 */
     height: 156px;
 }
 
-.course .bd a .text {
+.bd a .text {
+    height: 115px;
     padding: 20px 20px 22px;
     background-color: #fff;
 }
 
-.course .bd a .text h4 {
+.bd a .text h4 {
     height: 40px;
     font-weight: normal;
     font-size: 14px;
     color: #333;
 }
 
-.course .bd a .text p {
+.bd a .text p {
     margin-top: 16px;
     font-size: 14px;
     color: #999;
 }
 
-.course .bd a .text p span {
+.bd a .text p span {
     color: #fa6400;
 }
 
-.course .bd a .text p i {
+.bd a .text p i {
     font-style: normal;
+}
+
+/* 公共样式.hd ul */
+.hd ul {
+    display: flex;
+    width: 308px;
+    justify-content: space-between;
+}
+
+.hd ul .ahover {
+    color: #00a4ff;
+    font-size: 16px;
+}
+
+.hd ul li a:hover {
+    color: #00a4ff;
+}
+
+.frontdev .bd {
+    display: flex;
+    height: 386px;
+    justify-content: space-between;
+}
+
+.frontdev .bd .left {
+    width: 228px;
+}
+
+.frontdev .bd .right {
+    width: 957px;
+}
+
+.frontdev .bd .right .up {
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.frontdev .bd .right .down ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aidev {
+    height: 316px;
+}
+
+.aidev .bd {
+    height: 271px;
+}
+
+.aidev .bd ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 60px 0px 65px 0;
+    height: 273px;
+    background-color: #fff;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left .logo {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url("../images/logo.png");
+    font-size: 0;
+}
+
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    width: 440px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: solid 1px #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.footer .right {
+    display: flex;
+    width: 516px;
+    height: 151px;
+    justify-content: space-between;
+}
+
+.footer .right dt a {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.footer .right dd a {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
 }
