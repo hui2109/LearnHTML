@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .news {
+            /* 使用场景: 子级绝对定位, 父级相对定位 [子绝父相] */
+            position: relative;
+
+            margin: 20px auto;
+
+            width: 400px;
+            height: 400px;
+            background-color: #f8f8f8;
+        }
+
+        .txt {
+            width: 92px;
+            height: 32px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 12px;
+            text-align: center;
+            line-height: 32px;
+
+            /* 设置绝对定位 */
+            /* 特点 */
+            /* 1. 脱标, 不占位 */
+            /* 2. 设置边偏移则相对最近的已经定位的祖先元素改变位置; 如果祖先元素都未定位，则相对浏览器可视区改变位置 */
+            /* 3. 显示模式特点改变: 宽高生效 (具备了行内块的特点) */
+
+            /* 使用场景: 子级绝对定位, 父级相对定位 [子绝父相] */
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news">
+        <img src="../resources/news.jpg" alt="news" width="400px">
+        <span class="txt">展会活动</span>
+        <h4>2222世界移动大会 (MWC)</h4>
+        <p>与全球运营商一起深入探讨行业新增长, 共同描绘GUIDE商业蓝图</p>
+    </div>
+</body>
+
+</html>

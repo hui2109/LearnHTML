@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hui {
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hui div {
+            font-size: 0;
+
+            /* 精灵: 减少服务器被请求次数, 减轻服务器的压力, 提高页面加载速度 */
+            /* 1. 创建盒子, 盒子尺寸与小图尺寸相同 */
+            width: 103px;
+            height: 106px;
+
+            /* 2. 设置盒子背景图为精灵图 */
+            background-image: url("../resources/abcd.jpg");
+
+            /* 3. 添加background-position属性, 改变背景图位置 */
+            /* 3.1 使用PxCook测量小图片左上角坐标 */
+            /* 3.2 取负数坐标为background-position属性值 [向左上移动图片位置] */
+            background-position: -218px -141px;
+        }
+
+        .hui div:nth-child(2) {
+            width: 112px;
+            height: 109px;
+            background-position: -475px -421px;
+        }
+
+        .hui div:nth-child(3) {
+            width: 61px;
+            height: 106px;
+            background-position: -327px -141px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hui">
+        <div>h</div>
+        <div>u</div>
+        <div>i</div>
+    </div>
+</body>
+
+</html>
