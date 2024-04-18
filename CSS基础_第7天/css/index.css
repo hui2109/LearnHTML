@@ -1,0 +1,143 @@
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    /* background-color: pink; */
+}
+
+.shortcut ul {
+    display: flex;
+    height: 52px;
+}
+
+.shortcut li {
+    line-height: 52px;
+}
+
+.shortcut li a {
+    font-size: 14px;
+    padding: 0 15px;
+    /* 给a加边框线, 而不是给li加边框线 */
+    /* 因为a的高度和字体的高度一致 */
+    border-left: 1px solid #999;
+    color: #fff;
+}
+
+.shortcut li .login {
+    border-left: 0;
+    color: #5EB69C;
+}
+
+.shortcut li:last-child a {
+    padding: 0 0 0 15px;
+}
+
+.shortcut li .iconfont {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    margin: 22px auto;
+    /* background-color: pink; */
+}
+
+.header .logo {
+    margin-right: 41px;
+    /* background-color: skyblue; */
+}
+
+.header .logo a {
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url("../images/logo.png");
+    font-size: 0;
+}
+
+.header .navi {
+    margin-right: 28px;
+    /* background-color: skyblue; */
+}
+
+.header .navi ul {
+    display: flex;
+}
+
+.header .navi ul li {
+    padding-right: 47px;
+    line-height: 88px;
+}
+
+.header .navi ul a {
+    padding-bottom: 10px;
+}
+
+.header .navi ul a:hover {
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+
+.header .navi ul li:first-child a {
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+
+.header .search {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+}
+
+.header .search .iconfont {
+    margin-right: 8px;
+    color: #ccc;
+    font-style: 18px;
+    line-height: 32px;
+}
+
+.header .search input {
+    /* 浏览器优先生效input标签的默认宽度, 所以flex: 1 不生效 */
+    /* 解决方案: 重置input的默认宽度, 即设置宽度为0 */
+    flex: 1;
+    width: 0;
+}
+
+.header .search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.header .cart {
+    position: relative;
+    margin-top: 32px;
+}
+
+.header .cart .iconfont {
+    font-size: 30px;
+    color: #343434;
+}
+
+.header .cart i {
+    padding: 0 6px;
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #FFFEFE;
+    background-color: #E26237;
+    border-radius: 8px;
+}
